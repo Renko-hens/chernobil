@@ -1,0 +1,39 @@
+// Loader
+#cube-loader {
+  align-items: center;
+  display: flex;
+  height: 73px;
+  width: 100%;
+  position: relative;
+  top: 0;
+  margin-top: 24px;
+  & .caption {
+    margin: 0 auto;
+  }
+  
+  .cube-loader {
+    width: 73px;
+    height: 73px;
+    margin: 0 auto;
+    // margin-top: 49px;
+    position: relative;
+    transform: rotateZ(45deg);
+  }
+}
+
+.cube-loader__image {
+  max-height: 73px;
+  animation: cube-loader 2.76s infinite;
+}
+
+@keyframes cube-loader {
+  0%, 27% {
+    transform: perspective(136px) rotateX(-180deg);
+  }
+  27%, 65% {
+    transform: perspective(136px) rotateX(0deg);
+  }
+  65%, 100% {
+    transform: perspective(136px) rotateY(180deg);
+  }
+}

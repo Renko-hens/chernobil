@@ -1,0 +1,38 @@
+/* -------------------------------- 
+
+File#: _1_custom-select
+Title: Custom Select
+Descr: Custom Select Control
+Usage: codyhouse.co/license
+
+-------------------------------- */
+
+:root {
+  --select-icon-size: 1em;
+  --select-icon-right-margin: var(--space-sm);
+}
+
+.select {
+  position: relative;
+
+  select {
+    padding-right: calc(var(--select-icon-size) + var(--select-icon-right-margin) * 2);
+    padding-top: var(--select-icon-size);
+    padding-bottom: var(--select-icon-size);
+
+  }
+
+  .icon {
+    width: var(--select-icon-size);
+    height: var(--select-icon-size);
+    position: absolute;
+    right: var(--select-icon-right-margin);
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+
+  .icon--center {
+    transform: translateY(32%);
+  }
+}

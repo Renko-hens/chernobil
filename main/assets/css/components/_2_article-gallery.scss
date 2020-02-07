@@ -1,0 +1,14 @@
+/* -------------------------------- 
+
+File#: _2_article-gallery
+Title: Article Gallery
+Descr: A gallery of blog articles
+Usage: codyhouse.co/license
+
+-------------------------------- */
+
+.articles {
+  .pagination {
+    --pagination-cta-color: var(--color-contrast-higher); // color of pagination links
+  }
+}

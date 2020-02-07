@@ -1,0 +1,252 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900&display=swap"
+        rel="stylesheet"
+    >
+    <script>
+        document.getElementsByTagName("html")[0].className += " js";
+    </script>
+    <script>
+        if ('CSS' in window && CSS.supports('color', 'var(--color-var)')) {
+            document.write('<link rel="stylesheet" href="assets/css/style.css">');
+        } else {
+            document.write('<link rel="stylesheet" href="assets/css/style-fallback.css">');
+        }
+    </script>
+    <noscript>
+        <link
+            rel="stylesheet"
+            href="assets/css/style-fallback.css"
+        >
+    </noscript>
+    <title>Союз чернобыльцев Калмыкии</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="f-header js-f-header">
+      <div class="f-header__mobile-content container max-width-lg">
+        <a href="/" class="f-header__logo">
+          <img src="../../assets/img/logo.png" alt="Логотип союза чернобыль">
+        </a>
+    
+        <button class="reset anim-menu-btn js-anim-menu-btn f-header__nav-control js-tab-focus" aria-label="Toggle menu">
+          <i class="anim-menu-btn__icon anim-menu-btn__icon--close" aria-hidden="true"></i>
+        </button>
+      </div>
+    
+      <div class="f-header__nav" role="navigation">
+        <div class="f-header__nav-grid justify-between@md container max-width-lg">
+          <div class="f-header__nav-logo-wrapper">
+            <a href="/" class="f-header__logo">
+              <img src="../../assets/img/logo.png" alt="Логотип союза чернобыль">
+            </a>
+          </div>
+      
+          <ul class="f-header__list">
+            <!-- Одноуровневые заголовки -->
+            <li class="f-header__item"><a href="/" class="f-header__link">Главная</a></li>
+            <li class="f-header__item"><a href="/news.html" class="f-header__link" aria-current="page">Новости</a></li>
+            
+            <!-- Элемент с двууровневыми заголовками меню -->
+            <li class="f-header__item">
+              <a href="#0" class="f-header__link">
+                <span>Документы</span>
+                <svg class="f-header__dropdown-icon icon" aria-hidden="true" viewBox="0 0 12 12"><path d="M6,9l4-5H2Z"/></svg>
+              </a>
+              <ul class="f-header__dropdown">
+                <li><a href="#0" class="f-header__dropdown-link">Устав нашей общественной организации</a></li>
+                <li><a href="#0" class="f-header__dropdown-link">Список В/Ч принимавших участие в ликвидации аварии ЧАЭС</a></li>
+                <li><a href="#0" class="f-header__dropdown-link">О защите прав чернобыльцев</a></li>
+              </ul>
+            </li>
+            
+            <li class="f-header__item"><a href="#0" class="f-header__link">Об организации</a></li>
+            <li class="f-header__item"><a href="#0" class="f-header__link">Галерея</a></li>
+            <li class="f-header__item"><a href="#0" class="f-header__link">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+      
+      <!-- Хлебные крошки -->
+      <nav class="breadcrumbs text-sm container max-width-adaptive-lg margin-y-sm" aria-label="Breadcrumbs">
+        <ol class="flex flex-wrap flex-gap-xxs">
+          <li class="breadcrumbs__item">
+            <a href="/" class="color-inherit">Главная</a>
+            <svg class="icon margin-left-xxxs color-contrast-medium" aria-hidden="true" viewBox="0 0 16 16"><g stroke-width="1" stroke="currentColor"><polyline fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="6.5,3.5 11,8 6.5,12.5 "></polyline></g></svg>
+          </li>
+      
+          <li class="breadcrumbs__item">
+            <a href="/news.html" class="color-inherit">Новости</a>
+            <svg class="icon margin-left-xxxs color-contrast-medium" aria-hidden="true" viewBox="0 0 16 16"><g stroke-width="1" stroke="currentColor"><polyline fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="6.5,3.5 11,8 6.5,12.5 "></polyline></g></svg>
+          </li>
+
+          <li class="breadcrumbs__item" aria-current="page">Работа на ЧАЭС.</li>
+        </ol>
+      </nav>
+
+          <!-- текст -->
+      <section class="text margin-bottom-md">
+        <div class="container max-width-adaptive-lg">
+          <article class="article text-component">
+            
+            
+            <h2 class="text-bold">Работа на ЧАЭС.</h2>
+            
+            <p class="text-sm color-contrast-medium">
+              5 декабря 2020    
+            </p>
+            
+            <p class="text-md">
+              Из архива В.И. Горохова
+            </p>
+
+            <p>
+              Продолжение публикации фотографий из архива Василия Ивановича Горохова, посвященных работам 
+              по ликвидации последствий Чернобыльской катастрофы. Весь архив содержит более тысячи уникальных снимков, 
+              в этой части – цветные фотографии, снятые с вертолета при облете блока №4 в процессе возведения объекта “Укрытие”
+              и первые снимки будущего ПЗРО “Рассоха”.
+            </p>
+
+            <!-- Галерея фотографий -->
+            <div class="thumbslide js-thumbslide">
+              <div class="slideshow slideshow--transition-slide" data-navigation="on">
+                <p class="sr-only">Slideshow Items</p>
+                
+                <ul class="slideshow__content" style="padding-left: 0;">
+                  <li class="slideshow__item js-slideshow__item slideshow__item--selected" style="background-image: url('../../assets/img/1.jpg');" data-thumb="../../assets/img/1.jpg"></li>
+            
+                  <li class="slideshow__item js-slideshow__item"  style="background-image: url('../../assets/img/2.jpg');" data-thumb="../../assets/img/2.jpg"></li>
+            
+                  <li class="slideshow__item js-slideshow__item"  style="background-image: url('../../assets/img/3.jpg');" data-thumb="../../assets/img/3.jpg"></li>
+            
+                  <li class="slideshow__item js-slideshow__item" style="background-image: url('../../assets/img/4.jpg');" data-thumb="../../assets/img/4.jpg"></li>
+                  <li class="slideshow__item js-slideshow__item"  style="background-image: url('../../assets/img/2.jpg');" data-thumb="../../assets/img/2.jpg"></li>
+            
+                  <li class="slideshow__item js-slideshow__item"  style="background-image: url('../../assets/img/3.jpg');" data-thumb="../../assets/img/3.jpg"></li>
+            
+                  <li class="slideshow__item js-slideshow__item" style="background-image: url('../../assets/img/4.jpg');" data-thumb="../../assets/img/4.jpg"></li>
+                  <li class="slideshow__item js-slideshow__item"  style="background-image: url('../../assets/img/2.jpg');" data-thumb="../../assets/img/2.jpg"></li>
+            
+                  <li class="slideshow__item js-slideshow__item"  style="background-image: url('../../assets/img/3.jpg');" data-thumb="../../assets/img/3.jpg"></li>
+            
+                  <li class="slideshow__item js-slideshow__item" style="background-image: url('../../assets/img/4.jpg');" data-thumb="../../assets/img/4.jpg"></li>
+                  <li class="slideshow__item js-slideshow__item"  style="background-image: url('../../assets/img/2.jpg');" data-thumb="../../assets/img/2.jpg"></li>
+            
+                  <li class="slideshow__item js-slideshow__item"  style="background-image: url('../../assets/img/3.jpg');" data-thumb="../../assets/img/3.jpg"></li>
+            
+                  <li class="slideshow__item js-slideshow__item" style="background-image: url('../../assets/img/4.jpg');" data-thumb="../../assets/img/4.jpg"></li>
+                  
+                </ul>
+              </div>
+            
+              <div class="thumbslide__nav-wrapper" aria-hidden="true">
+                <nav class="thumbslide__nav"> 
+                  <ol class="thumbslide__nav-list " style="list-style: none; padding-left: 0;">
+                    <!-- this content will be created using JavaScript -->
+                  </ol>
+                </nav>
+              </div>
+            </div>
+
+
+            <p>
+              Правление ВОООСЧ, сплоченное практическими делами, пониманием целей 
+              и задач Организации, авторитетом своего председателя, 29 января в 
+              офисе Организации провело собрание, на котором были подведены итоги общественной 
+              деятельности волгоградских чернобыльцев в течение последних лет.
+            </p>
+
+            <p>
+              Было отмечено, что особенностью 2017-2019 годов явилась активизация работы Волгоградской
+              областной общественной организации «Союз «Чернобыль» с членами семей, потерявших кормильца. 
+              Полностью сформирована комиссия при правлении ВОООСЧ «По делам членов семей, потерявших кормильца»,
+              председателем которой является В. Д. Шейченко, определены основные направления её работы. 
+              Только за последний год оказана реальная помощь 23 вдовам чернобыльцев. Практически все обращения связаны с пенсионным обеспечением.
+            </p>
+
+            <p>
+              Председатель правления ВОООСЧ, его помощник и управляющий делами Организации приняли участие в работе заседаний 
+              Центрального Правления «Союза «Чернобыль России», которые состоялись 22 декабря 2018 года, 3 апреля 2019 года в г. Москве. 
+              О результатах работы подробно и обстоятельно на заседаниях правления ВОООСЧ рассказал председатель правления А. А. Гадуш. 
+              Следует отметить, что полезность такого участия в заседаниях Центрального Правления носила двусторонний характер:
+              с одной стороны, материалы, полученные волгоградскими чернобыльцами, способствовали большей активизации и целеустремленности в 
+              деятельности Организации, а с другой, — опыт и достижения ВОООСЧ были рекомендованы Центральным Правлением к распространению в 
+              других регионах Российской Федерации.
+            </p>
+
+            <p class="text-bold">
+              В истекший период члены правления ВОООСЧ приняли участие:
+            </p>
+
+            <ul>
+              <li>в выездных мероприятиях, которые были проведены в рамках исполнения областного проекта «Чернобыльских дней отголоски» в Даниловке, Волжском, Ленинске, Калаче-на-Дону;</li>
+              <li>11 августа 2018 года в г. Фролово, где в торжественной обстановке была вручена Благодарность Губернатора Волгоградской области, Почётная грамота ВОООСЧ председателю правления Фроловского отделения ВОООСЧ Яровому Юрию Александровичу;</li>
+              <li>1 августа 2018 года в г. Котельниково, где в торжественной обстановке с участием руководства района и города было отмечено десятилетие образования Котельниковского районного отделения ВОООСЧ;</li>
+            </ul>
+
+            <p class="text-bold">
+              Организация приняла активное участие в подготовке и проведении мероприятий, посвящённых:
+            </p>
+
+            <ul>
+              <li>17 июля 2018 года – презентации книги Героя Труда России, Народного учителя РФ, Почетного гражданина Волгоградской области Ю. В. Лепехина «Бессмертный Сталинград» в рамках Уроков Победы в Новой Анне, Михайловке, а в августе этого же года – в Суровикино и Котельниково;</li>
+              <li>2 февраля 2019 года — 76-й годовщине победы в Сталинградской битве;</li>
+              <li>14 февраля — 30-летию вывода советских войск из Афганистана;</li>
+              <li> 22 февраля — Дню защитника Отечества;</li>
+              <li>17 марта — 5-летию воссоединения Крыма с Россией;</li>
+              <li>26 апреля года — Международному дню памяти жертв радиационных аварий и катастроф;</li>
+              <li>9 Мая – Дню Победы;</li>
+              <li>19 августа — 50-летию операции «Голубой Дунай»;</li>
+            </ul>
+
+            <p>
+              Члены правления с удовлетворением отметили, что Организация движется в правильном направлении, вовлекая в свою деятельность членов районных отделений, посредством сайта Чернобыль34.рф активно информирует о сделанном и планах всех членов Организации, ставит перед собой амбициозные цели развития, что повышает авторитет Организации не только в глазах других общественных организаций, но и в глазах властных структур.
+            </p>
+
+          </article>
+        </div>
+      </section>
+           
+    </main>
+
+    <footer class="footer-v3 padding-y-lg">
+      <div class="footer-v3__container container max-width-lg">
+        <div class="footer-v3__logo">
+          <a href="/">
+            <img src="../../assets/img/logo.png" alt="Логотип союза чернобыль">
+          </a>
+        </div>
+    
+        <nav class="footer-v3__nav">
+          <ul class="footer-v3__nav-list">
+            <li class="footer-v3__nav-item"><a href="#0">Документы</a></li>
+            <li class="footer-v3__nav-item"><a href="#0">О нас</a></li>
+            <li class="footer-v3__nav-item"><a href="#0">Контакты</a></li>
+          </ul>
+        </nav>
+    
+        <div class="footer-v3__socials">
+          <a href="#0">
+            <svg id="Bold" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><title>Подпишитесь на нас в Одноклассниках</title><path d="m4.721 12.881c-.613 1.205.083 1.781 1.671 2.765 1.35.834 3.215 1.139 4.413 1.261-.491.472 1.759-1.692-4.721 4.541-1.374 1.317.838 3.43 2.211 2.141l3.717-3.585c1.423 1.369 2.787 2.681 3.717 3.59 1.374 1.294 3.585-.801 2.226-2.141-.102-.097-5.037-4.831-4.736-4.541 1.213-.122 3.05-.445 4.384-1.261l-.001-.001c1.588-.989 2.284-1.564 1.68-2.769-.365-.684-1.349-1.256-2.659-.267 0 0-1.769 1.355-4.622 1.355-2.854 0-4.622-1.355-4.622-1.355-1.309-.994-2.297-.417-2.658.267z"/><path d="m11.999 12.142c3.478 0 6.318-2.718 6.318-6.064 0-3.36-2.84-6.078-6.318-6.078-3.479 0-6.319 2.718-6.319 6.078 0 3.346 2.84 6.064 6.319 6.064zm0-9.063c1.709 0 3.103 1.341 3.103 2.999 0 1.644-1.394 2.985-3.103 2.985s-3.103-1.341-3.103-2.985c-.001-1.659 1.393-2.999 3.103-2.999z"/></svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>

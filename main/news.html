@@ -1,0 +1,244 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900&display=swap"
+        rel="stylesheet"
+    >
+    <script>
+        document.getElementsByTagName("html")[0].className += " js";
+    </script>
+    <script>
+        if ('CSS' in window && CSS.supports('color', 'var(--color-var)')) {
+            document.write('<link rel="stylesheet" href="assets/css/style.css">');
+        } else {
+            document.write('<link rel="stylesheet" href="assets/css/style-fallback.css">');
+        }
+    </script>
+    <noscript>
+        <link
+            rel="stylesheet"
+            href="assets/css/style-fallback.css"
+        >
+    </noscript>
+    <title>Союз чернобыльцев Калмыкии</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="f-header js-f-header">
+      <div class="f-header__mobile-content container max-width-lg">
+        <a href="/" class="f-header__logo">
+          <img src="../../assets/img/logo.png" alt="Логотип союза чернобыль">
+        </a>
+    
+        <button class="reset anim-menu-btn js-anim-menu-btn f-header__nav-control js-tab-focus" aria-label="Toggle menu">
+          <i class="anim-menu-btn__icon anim-menu-btn__icon--close" aria-hidden="true"></i>
+        </button>
+      </div>
+    
+      <div class="f-header__nav" role="navigation">
+        <div class="f-header__nav-grid justify-between@md container max-width-lg">
+          <div class="f-header__nav-logo-wrapper">
+            <a href="/" class="f-header__logo">
+              <img src="../../assets/img/logo.png" alt="Логотип союза чернобыль">
+            </a>
+          </div>
+      
+          <ul class="f-header__list">
+            <!-- Одноуровневые заголовки -->
+            <li class="f-header__item"><a href="/" class="f-header__link">Главная</a></li>
+            <li class="f-header__item"><a href="/news.html" class="f-header__link" aria-current="page">Новости</a></li>
+            
+            <!-- Элемент с двууровневыми заголовками меню -->
+            <li class="f-header__item">
+              <a href="#0" class="f-header__link">
+                <span>Документы</span>
+                <svg class="f-header__dropdown-icon icon" aria-hidden="true" viewBox="0 0 12 12"><path d="M6,9l4-5H2Z"/></svg>
+              </a>
+              <ul class="f-header__dropdown">
+                <li><a href="#0" class="f-header__dropdown-link">Устав нашей общественной организации</a></li>
+                <li><a href="#0" class="f-header__dropdown-link">Список В/Ч принимавших участие в ликвидации аварии ЧАЭС</a></li>
+                <li><a href="#0" class="f-header__dropdown-link">О защите прав чернобыльцев</a></li>
+              </ul>
+            </li>
+            
+            <li class="f-header__item"><a href="#0" class="f-header__link">Об организации</a></li>
+            <li class="f-header__item"><a href="#0" class="f-header__link">Галерея</a></li>
+            <li class="f-header__item"><a href="#0" class="f-header__link">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+      <div class="articles">
+        <div class="container max-width-adaptive-lg">
+          <div class="grid grid-gap-lg">
+            <article class="story story--featured">
+              <a href="/news_item.html" class="story__img">
+                <figure class="media-wrapper media-wrapper--4:3">
+                  <img src="../../assets/img/1.jpg" alt="Image description">
+                </figure>
+              </a>
+      
+              <div class="story__content">    
+                <div class="margin-bottom-xs">
+                  <a href="/news_item.html" class="story__category">
+                    <svg class="icon margin-right-xxxs" aria-hidden="true" viewBox="0 0 16 16"><g stroke-width='1' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'><circle cx='8' cy='7' r='1.5'></circle><path d='M12.121,14.263a7.5,7.5,0,1,0-8.242,0'></path><path d='M12.377,11.32a5.5,5.5,0,1,0-8.754,0'></path><path d='M6.605,10.5H9.4a1,1,0,0,1,1,1.1L10,15.5H6l-.39-3.9A1,1,0,0,1,6.605,10.5Z'></path></g></svg>
+                    <i>20 декабря 2020</i>
+                  </a>
+                </div>  
+                <div class="text-component">
+                  <h3 class="story__title"><a href="/news_item.html">Работа на ЧАЭС.</a></h3>
+                  <p>Как бы ни отдаляли нас годы от тех грозных героических дней, но память ведет и ведет тысячи наших сограждан к местам боевой славы, увековеченных памятниками. Многолюдно было 31 января, в преддверии 77—й годовщины победы в Сталинградской битве, и у памятника бойцам...</p>
+                </div>
+              </div>
+            </article>
+            
+            <article class="story col-4@md">
+              <a href="/news_item_2.html" class="story__img">
+                <figure class="media-wrapper media-wrapper--4:3">
+                  <img src="../../assets/img/2.jpg" alt="Image description">
+                </figure>
+              </a>
+      
+              <div class="story__content"> 
+                <div class="margin-bottom-xs">
+                  <a href="/news_item_2.html" class="story__category">
+                    <svg class="icon margin-right-xxxs" aria-hidden="true" viewBox="0 0 16 16"><g stroke-width='1' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'><circle cx='8' cy='7' r='1.5'></circle><path d='M12.121,14.263a7.5,7.5,0,1,0-8.242,0'></path><path d='M12.377,11.32a5.5,5.5,0,1,0-8.754,0'></path><path d='M6.605,10.5H9.4a1,1,0,0,1,1,1.1L10,15.5H6l-.39-3.9A1,1,0,0,1,6.605,10.5Z'></path></g></svg>
+                    <i>20 декабря 2020</i>
+                  </a>
+                </div>     
+                <div class="text-component">
+                  <h3 class="story__title"><a href="/news_item_2.html">Чернобыль до аварии</a></h3>
+                  <p>3 февраля 2020 года в Парке Истории Государства Российского (поселок Пятиморск Калачевского района) состоялось торжественное мероприятие, посвященное  открытию на Аллее Героев бюста Героя Советского Союза Алексея Петровича Маресьева. Участие в этом многочисленном...</p>
+                </div>
+              </div>
+            </article>
+      
+            <article class="story col-4@md">
+              <a href="#0" class="story__img">
+                <figure class="media-wrapper media-wrapper--4:3">
+                  <img src="../../assets/img/3.jpg" alt="Image description">
+                </figure>
+              </a>
+      
+              <div class="story__content">      
+                <div class="text-component">
+                  <div class="margin-bottom-xs">
+                    <a href="#0" class="story__category">
+                      <svg class="icon margin-right-xxxs" aria-hidden="true" viewBox="0 0 16 16"><g stroke-width='1' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'><circle cx='8' cy='7' r='1.5'></circle><path d='M12.121,14.263a7.5,7.5,0,1,0-8.242,0'></path><path d='M12.377,11.32a5.5,5.5,0,1,0-8.754,0'></path><path d='M6.605,10.5H9.4a1,1,0,0,1,1,1.1L10,15.5H6l-.39-3.9A1,1,0,0,1,6.605,10.5Z'></path></g></svg>
+                      <i>20 декабря 2020</i>
+                    </a>
+                  </div>
+                  <h3 class="story__title"><a href="#0">Жизнь простого человека</a></h3>
+                  <p>В конце января правление Калачевского отделения «Союз Чернобыль» встретилось с руководством Центральной районной больницы по вопросу ежегодной диспансеризации ликвидаторов аварии на ЧАЭС, их семей и лиц, подвергшихся радиационному воздействию. Встреча прошла в деловой...</p>
+                </div>
+              </div>
+            </article>
+      
+            <article class="story col-4@md">
+              <a href="#0" class="story__img">
+                <figure class="media-wrapper media-wrapper--4:3">
+                  <img src="../../assets/img/4.jpg" alt="Image description">
+                </figure>
+              </a>
+      
+              <div class="story__content">      
+                <div class="text-component">
+                  <div class="margin-bottom-xs">
+                    <a href="#0" class="story__category">
+                      <svg class="icon margin-right-xxxs" aria-hidden="true" viewBox="0 0 16 16"><g stroke-width='1' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'><circle cx='8' cy='7' r='1.5'></circle><path d='M12.121,14.263a7.5,7.5,0,1,0-8.242,0'></path><path d='M12.377,11.32a5.5,5.5,0,1,0-8.754,0'></path><path d='M6.605,10.5H9.4a1,1,0,0,1,1,1.1L10,15.5H6l-.39-3.9A1,1,0,0,1,6.605,10.5Z'></path></g></svg>
+                      <i>20 декабря 2020</i>
+                    </a>
+                  </div>
+                  <h3 class="story__title"><a href="#0">Международный жень инвалидов</a></h3>
+                  <p>Семинар, состоявшийся 4 февраля в Общественной палате Волгоградской области, собрал значительное количество представителей общественных организаций. Открыла и вела семинар председатель Общественной палаты Татьяна Николаевна Гензе. Разговор был посвящен весьма важному...</p>
+                </div>
+              </div>
+            </article>
+            
+          </div>
+      
+          <nav class="pagination margin-top-xxl" aria-label="Pagination">
+            <ol class="pagination__list flex flex-wrap flex-gap-xxs justify-center">
+              <li>
+                <a href="#0" class="pagination__item pagination__item--disabled" aria-label="Go to previous page">
+                  <svg class="icon margin-right-xxxs" aria-hidden="true" viewBox="0 0 16 16"><title>Previous</title><g stroke-width="1" stroke="currentColor"><polyline fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="9.5,3.5 5,8 9.5,12.5 "></polyline></g></svg>
+                  <span>Предыдущий</span>
+                </a>
+              </li>
+      
+              <li class="display@sm">
+                <a href="#0" class="pagination__item pagination__item--selected" aria-label="Go to page 1" aria-current="page">1</a>
+              </li>
+      
+              <li class="display@sm">
+                <a href="#0" class="pagination__item" aria-label="Go to page 2">2</a>
+              </li>
+      
+              <li class="display@sm">
+                <a href="#0" class="pagination__item" aria-label="Current Page, page 3">3</a>
+              </li>
+      
+              <li class="display@sm">
+                <a href="#0" class="pagination__item" aria-label="Go to page 4">4</a>
+              </li>
+      
+              <li class="display@sm" aria-hidden="true">
+                <span class="pagination__item pagination__item--ellipsis">...</span>
+              </li>
+      
+              <li class="display@sm">
+                <a href="#0" class="pagination__item" aria-label="Go to page 20">20</a>
+              </li>
+      
+              <li>
+                <a href="#0" class="pagination__item" aria-label="Go to next page">
+                  <span>Следующий</span>
+                  <svg class="icon margin-left-xxxs" aria-hidden="true" viewBox="0 0 16 16"><title>Следующи</title><g stroke-width="1" stroke="currentColor"><polyline fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="6.5,3.5 11,8 6.5,12.5 "></polyline></g></svg>
+                </a>
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      
+    </main>
+
+    <footer class="footer-v3 padding-y-lg">
+      <div class="footer-v3__container container max-width-lg">
+        <div class="footer-v3__logo">
+          <a href="/">
+            <img src="../../assets/img/logo.png" alt="Логотип союза чернобыль">
+          </a>
+        </div>
+    
+        <nav class="footer-v3__nav">
+          <ul class="footer-v3__nav-list">
+            <li class="footer-v3__nav-item"><a href="#0">Документы</a></li>
+            <li class="footer-v3__nav-item"><a href="#0">О нас</a></li>
+            <li class="footer-v3__nav-item"><a href="#0">Контакты</a></li>
+          </ul>
+        </nav>
+    
+        <div class="footer-v3__socials">
+          <a href="#0">
+            <svg id="Bold" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><title>Подпишитесь на нас в Одноклассниках</title><path d="m4.721 12.881c-.613 1.205.083 1.781 1.671 2.765 1.35.834 3.215 1.139 4.413 1.261-.491.472 1.759-1.692-4.721 4.541-1.374 1.317.838 3.43 2.211 2.141l3.717-3.585c1.423 1.369 2.787 2.681 3.717 3.59 1.374 1.294 3.585-.801 2.226-2.141-.102-.097-5.037-4.831-4.736-4.541 1.213-.122 3.05-.445 4.384-1.261l-.001-.001c1.588-.989 2.284-1.564 1.68-2.769-.365-.684-1.349-1.256-2.659-.267 0 0-1.769 1.355-4.622 1.355-2.854 0-4.622-1.355-4.622-1.355-1.309-.994-2.297-.417-2.658.267z"/><path d="m11.999 12.142c3.478 0 6.318-2.718 6.318-6.064 0-3.36-2.84-6.078-6.318-6.078-3.479 0-6.319 2.718-6.319 6.078 0 3.346 2.84 6.064 6.319 6.064zm0-9.063c1.709 0 3.103 1.341 3.103 2.999 0 1.644-1.394 2.985-3.103 2.985s-3.103-1.341-3.103-2.985c-.001-1.659 1.393-2.999 3.103-2.999z"/></svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>

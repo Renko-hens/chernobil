@@ -1,0 +1,94 @@
+/* -------------------------------- 
+
+File#: _1_pagination
+Title: Pagination 
+Descr: Component used to navigate through pages of related content
+Usage: codyhouse.co/license
+
+-------------------------------- */
+
+:root {
+  --pagination-cta-color: var(--color-primary); // color of pagination links
+}
+
+.pagination {}
+
+.pagination__list > li {
+  display: inline-block; // flex fallback
+}
+
+// --split - push first + last item to sides
+.pagination--split {
+  .pagination__list {
+    width: 100%;
+
+    > *:first-child {
+        margin-right: auto;
+    }
+
+    > *:last-child {
+        margin-left: auto;
+    }
+  }
+}
+
+.pagination__item {
+  display: inline-block; // flex fallback
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  line-height: 1;
+  padding-top: var(--space-xs);
+  padding-bottom: var(--space-xs); 
+  padding-left: calc(1.355 * var(--space-xs));
+  padding-right: calc(1.355 * var(--space-xs));
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  height: 100%;
+  color: var(--pagination-cta-color);
+
+  &:hover {
+    background-color: var(--color-contrast-lower);
+  }
+
+  &:active {
+    background-color: var(--color-contrast-low);
+  }
+}
+
+.pagination__item--selected {
+  background-color: var(--pagination-cta-color);
+  color: var(--color-white);
+  @include fontSmooth;
+
+  &:hover, &:active {
+    background-color: var(--pagination-cta-color);
+  }
+}
+
+.pagination__item--ellipsis {
+  color: var(--color-contrast-high);
+
+  &:hover, &:active {
+    background-color: transparent;
+  }
+}
+
+.pagination__item--disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+// --jumper
+.pagination__jumper {
+  .form-control {
+    width: 3.2em;
+    margin-right: var(--space-xs);
+    padding: var(--space-xs);
+  }
+
+  em {
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+}

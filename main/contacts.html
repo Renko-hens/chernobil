@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900&display=swap" rel="stylesheet">
+    <script>
+        document.getElementsByTagName("html")[0].className += " js";
+    </script>
+    <script>
+        if ('CSS' in window && CSS.supports('color', 'var(--color-var)')) {
+            document.write('<link rel="stylesheet" href="assets/css/style.css">');
+        } else {
+            document.write('<link rel="stylesheet" href="assets/css/style-fallback.css">');
+        }
+    </script>
+    <noscript>
+    <link
+      rel="stylesheet"
+      href="assets/css/style-fallback.css"
+    >
+  </noscript>
+    <title>OutletAutoVillage</title>
+</head>
+
+<body>
+    <!-- Header -->
+
+    <header class="main-header">
+
+        <div class="main-header__container max-width-md grid justify-between items-center">
+
+            <a href="/" class="main-header__wrapper-pictures col-2 col-3@xs col-2@sm">
+
+                <img class="images" src="/assets/img/logo.svg" alt="Outlet Auto Village">
+            </a>
+
+            <nav class="main-header__navigation navigation col-12@xs col-5 col-6@sm">
+
+                <ul class="navigation__list flex flex-wrap">
+
+                    <li class="navigation__item">
+
+                        <a class="navigation__link link" href="change.html">Обменять</a></li>
+
+                    <li class="navigation__item">
+
+                        <a class="navigation__link link" href="sale.html">Продать</a></li>
+
+                    <li class="navigation__item">
+
+                        <a class="navigation__link link" href="#">Купить</a></li>
+
+                    <li class="navigation__item">
+
+                        <a class="navigation__link link" href="#">Акции</a></li>
+
+                    <li class="navigation__item">
+
+                        <a class="navigation__link link" href="#">Компания</a></li>
+
+                    <li class="navigation__item">
+
+                        <a class="navigation__link link" href="#">Отзывы</a></li>
+
+                    <li class="navigation__item">
+
+                        <a class="navigation__link link" href="#">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <div class="main-header__information text-right col-5 col-7@xs col-4@sm flex justify-center@xs  items-end@sm flex-column@sm">
+
+                <p class="main-header__text">
+                    угол 8-го Верхнего и&nbsp;пр. Культуры <br> (напротив пр. Культуры, 50Б)
+                </p>
+
+                <a class="main-header__link link" href="tel:+78124459713">
+            +7 812 445-97-13
+          </a>
+            </div>
+
+            <div class="main-header__menu-block col-5 col-2@xs flex justify-end@xs">
+
+                <button class="main-header__button reset anim-menu-btn js-anim-menu-btn" aria-label="Toggle menu">
+  
+            <i
+              class="anim-menu-btn__icon anim-menu-btn__icon--close"
+              aria-hidden="true"
+            ></i>
+          </button>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="property address">
+            <div class="property__container container max-width-md">
+              <div class="property__wrapper flex flex-column@xs flex-row@sm items-center justify-end flex-gap-xl margin-top-sm">
+                  <div class="property__block">
+                      <h3 class="property__title title">
+                          Как до нас добраться
+                      </h3> 
+                      <p class="property__text property__text--strong">
+                          На Автобусе:
+                      </p>
+                      <p class="property__text">
+                        От м. Парнас автобус №113 – Мясоперерабатывающий завод – пересечение 8 Верхнего переулка и пр. Культуры (напротив Культуры 50Б).
+                      </p>
+                  </div>
+                  <div class="property__picture">
+                    <img src="/assets/img/bus.svg" alt="" class="property__image">
+                  </div>
+              </div>
+              <div class="property__wrapper flex flex-column@xs flex-row@sm items-center justify-end flex-gap-xl margin-top-sm">
+                <div class="property__block outlet__flex-order--right">
+                    <p class="property__text property__text--strong">
+                        На Маршрутке:
+                    </p>
+                    <p class="property__text">
+                      т м. Просвещения маршрутка № К-539 – пересечение 8 Верхнего переулка и пр. Культуры (напротив Культуры 50Б).
+                    </p>
+                    <p class="property__text">
+                      Если Вы договорились о просмотре автомобиля заранее, то можете воспользоваться бесплатным такси от м. Парнас. Дополнительную информацию уточняйте у своего менеджера.
+                    </p>
+                </div>
+                <div class="property__picture outlet__flex-order--left">
+                  <img src="/assets/img/marshrutka.svg" alt="" class="property__image">
+                </div>
+              </div>
+              <div class="property__wrapper flex flex-column@xs flex-row@sm items-center justify-end flex-gap-xl margin-top-sm">
+                  <div class="property__block">
+                      <p class="property__text property__text--strong">
+                          На автомобиле:
+                      </p>
+                      <p class="property__text">
+                          Из центра города: Троицкий мост – улица Куйбышева – Сампсониевский мост – Большой Сампсониевский проспект – проспект Энгельса – 8-й Верхний переулок – пересечение 8 верхнего переулка и пр. Культуры (напротив Культуры 50)
+                      </p>
+                  </div>
+                  <div class="property__picture">
+                    <img src="/assets/img/taxi.svg" alt="" class="property__image">
+                  </div>
+              </div>
+            </div>
+        </section>
+        <!-- Карта -->
+        <section class="contacts map">
+            <!-- Здесь будет карта -->
+            <div class="map__element-block">
+                <script class="map__element-frame" type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7e3802c468fab21c8025bed6317f353b460d5c922b361a156415a7bf5f377e23&amp;width=100%25&amp;height=568&amp;lang=ru_RU&amp;scroll=false"></script>
+            </div>
+
+            <!-- Блок на карте -->
+
+            <div class="map__container outlet__background-color--secondary">
+
+                <div class="map__address">
+
+                    <h2 class="map__title title">
+                        Мы ждем вас по&nbsp;адресу:
+                    </h2>
+
+                    <p class="map__description">
+                        Угол 8 верхнего и&nbsp;пр.&nbsp;культуры<br>(напротив культуры 50б)<br> Без выходных с 9:00 до&nbsp;22:00<br>Телефон: +7 812 445-97-13
+                    </p>
+                </div>
+            </div>
+
+            <a class="map__element-link" href="https://yandex.ru/maps/?um=constructor%3A7e3802c468fab21c8025bed6317f353b460d5c922b361a156415a7bf5f377e23&amp;source=constructorStatic" target="_blank">
+
+                <img class="map__element-image" src="/assets/img/oav_map--mobile.jpeg" alt="" style="border: 0;" /></a>
+
+            <a class="map-element__link" href="https://yandex.ru/maps/?um=constructor%3A7e3802c468fab21c8025bed6317f353b460d5c922b361a156415a7bf5f377e23&amp;source=constructorStatic" target="_blank">
+
+                <img class="map-element__image" src="/assets/img/oav_map--tablet.jpeg" alt="" style="border: 0;" /></a>
+        </section>
+    </main>
+
+
+    <footer class="main-footer">
+
+        <div class="main-footer__container container max-width-lg">
+
+            <!-- Блоки -->
+
+            <div class="main-footer__blocks flex justify-between flex-gap-md flex-column@xs flex-row@sm">
+
+                <!-- Информация -->
+
+                <div class="main-footer__information">
+
+                    <div class="main-footer__wrapper-pictures">
+
+                        <img class="image" src="/assets/img/logo.svg" alt="Outlet Auto Village">
+                    </div>
+
+                    <div class="main-footer__wrapper-information">
+
+                        <a class="main-footer__phone link" href="tel:+78124459713">
+              +7 812 445-97-13
+            </a>
+
+                        <a class="main-footer__email link" href="mailto:info@outletautovillage.ru">
+              info@outletautovillage.ru
+            </a>
+                    </div>
+                </div>
+
+                <!-- Услуги -->
+
+                <div class="services">
+
+                    <h3 class="services__title main-footer__title">
+                        Услуги
+                    </h3>
+
+                    <ul class="services__list">
+
+                        <li class="services__item">
+
+                            <a href="#" class="services__link main-footer__link">
+                Продажа автомобилей с&nbsp;пробегом
+              </a>
+                        </li>
+
+                        <li class="services__item">
+
+                            <a href="#" class="services__link main-footer__link">
+                Выкуп автомобилей с&nbsp;пробегом
+              </a>
+                        </li>
+
+                        <li class="services__item">
+
+                            <a href="#" class="services__link main-footer__link">
+                Выкуп коммерческих авто
+              </a>
+                        </li>
+
+                        <li class="services__item">
+
+                            <a href="#" class="services__link main-footer__link">
+                Трейд-ин
+              </a>
+                        </li>
+
+                        <li class="services__item">
+
+                            <a href="#" class="services__link main-footer__link">
+                Автострахование
+              </a>
+                        </li>
+
+                        <li class="services__item">
+
+                            <a href="#" class="services__link main-footer__link">
+                Автокредитование
+              </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Компания -->
+
+                <div class="company">
+
+                    <h3 class="company__title main-footer__title">
+                        Компания
+                    </h3>
+
+                    <ul class="company__list">
+
+                        <li class="company__item">
+
+                            <a href="#" class="company__link main-footer__link">
+                О нас
+              </a>
+                        </li>
+
+                        <li class="company__item">
+
+                            <a href="#" class="company__link main-footer__link">
+                Почему выбирают нас
+              </a>
+                        </li>
+
+                        <li class="company__item">
+
+                            <a href="#" class="company__link main-footer__link">
+                Акции
+              </a>
+                        </li>
+
+                        <li class="company__item">
+
+                            <a href="#" class="company__link main-footer__link">
+                Документы
+              </a>
+                        </li>
+
+                        <li class="company__item">
+
+                            <a href="#" class="company__link main-footer__link">
+                Отзывы
+              </a>
+                        </li>
+
+                        <li class="company__item">
+
+                            <a href="#" class="company__link main-footer__link">
+                Контакты
+              </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="main-footer__blocks flex flex-column">
+
+                <div class="main-footer__socials">
+
+                    <ul class="socials__list flex flex-gap-sm justify-center ">
+
+                        <li class="socials__item">
+
+                            <a href="instagram.ru" class="socials__link">
+                Инстаграм
+
+                <img
+                  class="socials__image"
+                  src="/assets/img/instagram.svg"
+                  alt="instagram"
+                >
+              </a>
+                        </li>
+
+                        <li class="socials__item">
+
+                            <a href="vkontakte.com" class="socials__link">
+                Вконтакте
+
+                <img
+                  class="socials__image"
+                  src="/assets/img/vk.svg"
+                  alt="vkontakte"
+                >
+              </a>
+                        </li>
+
+                        <li class="socials__item">
+
+                            <a href="facebook.com" class="socials__link">
+                Фейсбук
+
+                <img
+                  class="socials__image"
+                  src="/assets/img/facebook.svg"
+                  alt="facebook"
+                >
+              </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="main-footer__copyright copyright flex flex-wrap justify-center">
+
+                    <p class="copyright__text">
+                        © 2018 ООО «Аутлет Ауто Вилладж»
+                    </p>
+
+                    <a class="copyright__link main-footer__link" href="#">
+            Пользовательское соглашение
+          </a>
+
+                    <a class="copyright__link main-footer__link" href="#">
+            &nbsp;Политика конфиденциальности
+          </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>

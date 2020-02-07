@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link
+    href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900&display=swap"
+    rel="stylesheet"
+>
+<script>
+    document.getElementsByTagName("html")[0].className += " js";
+</script>
+<script>
+    if ('CSS' in window && CSS.supports('color', 'var(--color-var)')) {
+        document.write('<link rel="stylesheet" href="assets/css/style.css">');
+    } else {
+        document.write('<link rel="stylesheet" href="assets/css/style-fallback.css">');
+    }
+</script>
+<noscript>
+    <link
+        rel="stylesheet"
+        href="assets/css/style-fallback.css"
+    >
+</noscript>
+    <title>Фото</title>
+</head>
+<body>
+        <header class="main-header">
+
+        <div class="main-header__container max-width-md grid justify-between items-center">
+
+            <a
+                href="/"
+                class="main-header__wrapper-pictures col-2 col-3@xs col-2@sm"
+            >
+
+                <img
+                    class="images"
+                    src="/assets/img/logo.svg"
+                    alt="Outlet Auto Village"
+                >
+            </a>
+
+            <nav class="main-header__navigation navigation col-12@xs col-5 col-6@sm">
+
+                <ul class="navigation__list flex flex-wrap">
+
+                    <li class="navigation__item">
+
+                        <a
+                            class="navigation__link link"
+                            href="change.html"
+                        >Обменять</a></li>
+
+                    <li class="navigation__item">
+
+                        <a
+                            class="navigation__link link"
+                            href="sale.html"
+                        >Продать</a></li>
+
+                    <li class="navigation__item">
+
+                        <a
+                            class="navigation__link link"
+                            href="#"
+                        >Купить</a></li>
+
+                    <li class="navigation__item">
+
+                        <a
+                            class="navigation__link link"
+                            href="#"
+                        >Акции</a></li>
+
+                    <li class="navigation__item">
+
+                        <a
+                            class="navigation__link navigation__link--active link"
+                            href="#"
+                        >Компания</a>
+
+                        <div class="navigation__sub-wrapper">
+                            <ul class="navigation__sub-list max-width-md">
+
+                                <li class="navigation__sub-item">
+    
+                                    <a
+                                        href="#"
+                                        class="navigation__sub-link link"
+                                    >
+                                        О нас
+                                    </a>
+                                </li>
+    
+                                <li class="navigation__sub-item">
+    
+                                    <a
+                                        href="#"
+                                        class="navigation__sub-link link"
+                                    >
+                                        О Вас
+                                    </a>
+                                </li>
+    
+                                <li class="navigation__sub-item">
+    
+                                    <a
+                                        href="#"
+                                        class="navigation__sub-link link"
+                                    >
+                                        О них
+                                    </a>
+                                </li>
+
+                                <li class="navigation__sub-item">
+    
+                                    <a
+                                        href="#"
+                                        class="navigation__sub-link link"
+                                    >
+                                        Философия
+                                    </a>
+                                </li>
+
+                                <li class="navigation__sub-item">
+    
+                                    <a
+                                        href="#"
+                                        class="navigation__sub-link link"
+                                    >
+                                        Дружба народов
+                                    </a>
+                                </li>
+                                <li class="navigation__sub-item">
+    
+                                    <a
+                                        href="#"
+                                        class="navigation__sub-link link"
+                                    >
+                                        Дружба народов
+                                    </a>
+                                </li>
+                                <li class="navigation__sub-item">
+    
+                                    <a
+                                        href="#"
+                                        class="navigation__sub-link link"
+                                    >
+                                        Дружба народов
+                                    </a>
+                                </li>
+                                <li class="navigation__sub-item">
+    
+                                    <a
+                                        href="#"
+                                        class="navigation__sub-link link"
+                                    >
+                                        Дружба народов
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="navigation__item">
+
+                        <a
+                            class="navigation__link link"
+                            href="#"
+                        >Отзывы</a></li>
+
+                    <li class="navigation__item">
+
+                        <a
+                            class="navigation__link link"
+                            href="#"
+                        >Контакты</a></li>
+                </ul>
+            </nav>
+
+            <div
+                class="main-header__information text-right col-5 col-7@xs col-4@sm flex justify-center@xs  items-end@sm flex-column@sm">
+
+                <p class="main-header__text">
+                    угол 8-го Верхнего и&nbsp;пр. Культуры <br> (напротив пр. Культуры, 50Б)
+                </p>
+
+                <a
+                    class="main-header__link link"
+                    href="tel:+78124459713"
+                >
+                    +7 812 445-97-13
+                </a>
+            </div>
+
+            <div class="main-header__menu-block col-5 col-2@xs flex justify-end@xs">
+
+                <button
+                    class="main-header__button reset anim-menu-btn js-anim-menu-btn"
+                    aria-label="Toggle menu"
+                >
+
+                    <i
+                        class="anim-menu-btn__icon anim-menu-btn__icon--close"
+                        aria-hidden="true"
+                    ></i>
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+
+        <section class="gallery margin-top-xxl">
+            <div class="gallery__container container max-width-md">
+                <h2 class="gallery__title--strong gallery__title--center title">
+                    Фото
+                </h2>
+                <ul class="gallery__list grid grid-gap-sm margin-top-md">
+                    <li class="gallery__item col-12@xs col-3@sm col-2@md">
+                        <a href="#" class="gallery__link">
+                                <img src="/assets/img/dsasd.jpg" alt="#" class="gallery__image">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+
+        <div class="main-footer__container container max-width-lg">
+
+            <!-- Блоки -->
+
+            <div class="main-footer__blocks flex justify-between flex-gap-md flex-column@xs flex-row@sm">
+
+                <!-- Информация -->
+
+                <div class="main-footer__information">
+
+                    <div class="main-footer__wrapper-pictures">
+
+                        <img
+                            class="image"
+                            src="/assets/img/logo.svg"
+                            alt="Outlet Auto Village"
+                        >
+                    </div>
+
+                    <div class="main-footer__wrapper-information">
+
+                        <a
+                            class="main-footer__phone link"
+                            href="tel:+78124459713"
+                        >
+                            +7 812 445-97-13
+                        </a>
+
+                        <a
+                            class="main-footer__email link"
+                            href="mailto:info@outletautovillage.ru"
+                        >
+                            info@outletautovillage.ru
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Услуги -->
+
+                <div class="services">
+
+                    <h3 class="services__title main-footer__title">
+                        Услуги
+                    </h3>
+
+                    <ul class="services__list">
+
+                        <li class="services__item">
+
+                            <a
+                                href="#"
+                                class="services__link main-footer__link"
+                            >
+                                Продажа автомобилей с&nbsp;пробегом
+                            </a>
+                        </li>
+
+                        <li class="services__item">
+
+                            <a
+                                href="#"
+                                class="services__link main-footer__link"
+                            >
+                                Выкуп автомобилей с&nbsp;пробегом
+                            </a>
+                        </li>
+
+                        <li class="services__item">
+
+                            <a
+                                href="#"
+                                class="services__link main-footer__link"
+                            >
+                                Выкуп коммерческих авто
+                            </a>
+                        </li>
+
+                        <li class="services__item">
+
+                            <a
+                                href="#"
+                                class="services__link main-footer__link"
+                            >
+                                Трейд-ин
+                            </a>
+                        </li>
+
+                        <li class="services__item">
+
+                            <a
+                                href="#"
+                                class="services__link main-footer__link"
+                            >
+                                Автострахование
+                            </a>
+                        </li>
+
+                        <li class="services__item">
+
+                            <a
+                                href="#"
+                                class="services__link main-footer__link"
+                            >
+                                Автокредитование
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Компания -->
+
+                <div class="company">
+
+                    <h3 class="company__title main-footer__title">
+                        Компания
+                    </h3>
+
+                    <ul class="company__list">
+
+                        <li class="company__item">
+
+                            <a
+                                href="#"
+                                class="company__link main-footer__link"
+                            >
+                                О нас
+                            </a>
+                        </li>
+
+                        <li class="company__item">
+
+                            <a
+                                href="#"
+                                class="company__link main-footer__link"
+                            >
+                                Почему выбирают нас
+                            </a>
+                        </li>
+
+                        <li class="company__item">
+
+                            <a
+                                href="#"
+                                class="company__link main-footer__link"
+                            >
+                                Акции
+                            </a>
+                        </li>
+
+                        <li class="company__item">
+
+                            <a
+                                href="#"
+                                class="company__link main-footer__link"
+                            >
+                                Документы
+                            </a>
+                        </li>
+
+                        <li class="company__item">
+
+                            <a
+                                href="#"
+                                class="company__link main-footer__link"
+                            >
+                                Отзывы
+                            </a>
+                        </li>
+
+                        <li class="company__item">
+
+                            <a
+                                href="#"
+                                class="company__link main-footer__link"
+                            >
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="main-footer__blocks flex flex-column">
+
+                <div class="main-footer__socials">
+
+                    <ul class="socials__list flex flex-gap-sm justify-center ">
+
+                        <li class="socials__item">
+
+                            <a
+                                href="instagram.ru"
+                                class="socials__link"
+                            >
+                                Инстаграм
+
+                                <img
+                                    class="socials__image"
+                                    src="/assets/img/instagram.svg"
+                                    alt="instagram"
+                                >
+                            </a>
+                        </li>
+
+                        <li class="socials__item">
+
+                            <a
+                                href="vkontakte.com"
+                                class="socials__link"
+                            >
+                                Вконтакте
+
+                                <img
+                                    class="socials__image"
+                                    src="/assets/img/vk.svg"
+                                    alt="vkontakte"
+                                >
+                            </a>
+                        </li>
+
+                        <li class="socials__item">
+
+                            <a
+                                href="facebook.com"
+                                class="socials__link"
+                            >
+                                Фейсбук
+
+                                <img
+                                    class="socials__image"
+                                    src="/assets/img/facebook.svg"
+                                    alt="facebook"
+                                >
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="main-footer__copyright copyright flex flex-wrap justify-center">
+
+                    <p class="copyright__text">
+                        © 2018 ООО «Аутлет Ауто Вилладж»
+                    </p>
+
+                    <a
+                        class="copyright__link main-footer__link"
+                        href="#"
+                    >
+                        Пользовательское соглашение
+                    </a>
+
+                    <a
+                        class="copyright__link main-footer__link"
+                        href="#"
+                    >
+                        &nbsp;Политика конфиденциальности
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
