@@ -1,499 +1,221 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link
-    href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900&display=swap"
-    rel="stylesheet"
->
-<script>
-    document.getElementsByTagName("html")[0].className += " js";
-</script>
-<script>
-    if ('CSS' in window && CSS.supports('color', 'var(--color-var)')) {
-        document.write('<link rel="stylesheet" href="assets/css/style.css">');
-    } else {
-        document.write('<link rel="stylesheet" href="assets/css/style-fallback.css">');
-    }
-</script>
-<noscript>
-    <link
-        rel="stylesheet"
-        href="assets/css/style-fallback.css"
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
     >
-</noscript>
-    <title>Фото</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900&display=swap"
+        rel="stylesheet"
+    >
+    <script>
+        document.getElementsByTagName("html")[0].className += " js";
+    </script>
+    <script>
+        if ('CSS' in window && CSS.supports('color', 'var(--color-var)')) {
+            document.write('<link rel="stylesheet" href="assets/css/style.css">');
+        } else {
+            document.write('<link rel="stylesheet" href="assets/css/style-fallback.css">');
+        }
+    </script>
+    <noscript>
+        <link
+            rel="stylesheet"
+            href="assets/css/style-fallback.css"
+        >
+    </noscript>
+    <title>Союз чернобыльцев Калмыкии</title>
 </head>
+
 <body>
-        <header class="main-header">
-
-        <div class="main-header__container max-width-md grid justify-between items-center">
-
-            <a
-                href="/"
-                class="main-header__wrapper-pictures col-2 col-3@xs col-2@sm"
-            >
-
-                <img
-                    class="images"
-                    src="/assets/img/logo.svg"
-                    alt="Outlet Auto Village"
-                >
+    <!-- Header -->
+    <header class="f-header js-f-header">
+      <div class="f-header__mobile-content container max-width-lg">
+        <a href="#0" class="f-header__logo">
+          <img src="../../assets/img/logo.png" alt="Логотип союза чернобыль">
+        </a>
+    
+        <button class="reset anim-menu-btn js-anim-menu-btn f-header__nav-control js-tab-focus" aria-label="Toggle menu">
+          <i class="anim-menu-btn__icon anim-menu-btn__icon--close" aria-hidden="true"></i>
+        </button>
+      </div>
+    
+      <div class="f-header__nav" role="navigation">
+        <div class="f-header__nav-grid justify-between@md container max-width-lg">
+          <div class="f-header__nav-logo-wrapper">
+            <a href="/" class="f-header__logo">
+              <img src="../../assets/img/logo.png" alt="Логотип союза чернобыль">
             </a>
-
-            <nav class="main-header__navigation navigation col-12@xs col-5 col-6@sm">
-
-                <ul class="navigation__list flex flex-wrap">
-
-                    <li class="navigation__item">
-
-                        <a
-                            class="navigation__link link"
-                            href="change.html"
-                        >Обменять</a></li>
-
-                    <li class="navigation__item">
-
-                        <a
-                            class="navigation__link link"
-                            href="sale.html"
-                        >Продать</a></li>
-
-                    <li class="navigation__item">
-
-                        <a
-                            class="navigation__link link"
-                            href="#"
-                        >Купить</a></li>
-
-                    <li class="navigation__item">
-
-                        <a
-                            class="navigation__link link"
-                            href="#"
-                        >Акции</a></li>
-
-                    <li class="navigation__item">
-
-                        <a
-                            class="navigation__link navigation__link--active link"
-                            href="#"
-                        >Компания</a>
-
-                        <div class="navigation__sub-wrapper">
-                            <ul class="navigation__sub-list max-width-md">
-
-                                <li class="navigation__sub-item">
-    
-                                    <a
-                                        href="#"
-                                        class="navigation__sub-link link"
-                                    >
-                                        О нас
-                                    </a>
-                                </li>
-    
-                                <li class="navigation__sub-item">
-    
-                                    <a
-                                        href="#"
-                                        class="navigation__sub-link link"
-                                    >
-                                        О Вас
-                                    </a>
-                                </li>
-    
-                                <li class="navigation__sub-item">
-    
-                                    <a
-                                        href="#"
-                                        class="navigation__sub-link link"
-                                    >
-                                        О них
-                                    </a>
-                                </li>
-
-                                <li class="navigation__sub-item">
-    
-                                    <a
-                                        href="#"
-                                        class="navigation__sub-link link"
-                                    >
-                                        Философия
-                                    </a>
-                                </li>
-
-                                <li class="navigation__sub-item">
-    
-                                    <a
-                                        href="#"
-                                        class="navigation__sub-link link"
-                                    >
-                                        Дружба народов
-                                    </a>
-                                </li>
-                                <li class="navigation__sub-item">
-    
-                                    <a
-                                        href="#"
-                                        class="navigation__sub-link link"
-                                    >
-                                        Дружба народов
-                                    </a>
-                                </li>
-                                <li class="navigation__sub-item">
-    
-                                    <a
-                                        href="#"
-                                        class="navigation__sub-link link"
-                                    >
-                                        Дружба народов
-                                    </a>
-                                </li>
-                                <li class="navigation__sub-item">
-    
-                                    <a
-                                        href="#"
-                                        class="navigation__sub-link link"
-                                    >
-                                        Дружба народов
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li class="navigation__item">
-
-                        <a
-                            class="navigation__link link"
-                            href="#"
-                        >Отзывы</a></li>
-
-                    <li class="navigation__item">
-
-                        <a
-                            class="navigation__link link"
-                            href="#"
-                        >Контакты</a></li>
-                </ul>
-            </nav>
-
-            <div
-                class="main-header__information text-right col-5 col-7@xs col-4@sm flex justify-center@xs  items-end@sm flex-column@sm">
-
-                <p class="main-header__text">
-                    угол 8-го Верхнего и&nbsp;пр. Культуры <br> (напротив пр. Культуры, 50Б)
-                </p>
-
-                <a
-                    class="main-header__link link"
-                    href="tel:+78124459713"
-                >
-                    +7 812 445-97-13
-                </a>
-            </div>
-
-            <div class="main-header__menu-block col-5 col-2@xs flex justify-end@xs">
-
-                <button
-                    class="main-header__button reset anim-menu-btn js-anim-menu-btn"
-                    aria-label="Toggle menu"
-                >
-
-                    <i
-                        class="anim-menu-btn__icon anim-menu-btn__icon--close"
-                        aria-hidden="true"
-                    ></i>
-                </button>
-            </div>
-
+          </div>
+      
+          <ul class="f-header__list">
+            <!-- Одноуровневые заголовки -->
+            <li class="f-header__item"><a href="/" class="f-header__link">Главная</a></li>
+            <li class="f-header__item"><a href="/news.html" class="f-header__link">Новости</a></li>
+            
+            <!-- Элемент с двууровневыми заголовками меню -->
+            <li class="f-header__item">
+              <a href="/documents.html" class="f-header__link">
+                <span>Документы</span>
+                <svg class="f-header__dropdown-icon icon" aria-hidden="true" viewBox="0 0 12 12"><path d="M6,9l4-5H2Z"/></svg>
+              </a>
+              <ul class="f-header__dropdown">
+                <li><a href="#0" class="f-header__dropdown-link">Устав нашей общественной организации</a></li>
+                <li><a href="#0" class="f-header__dropdown-link">Список В/Ч принимавших участие в ликвидации аварии ЧАЭС</a></li>
+                <li><a href="#0" class="f-header__dropdown-link">О защите прав чернобыльцев</a></li>
+              </ul>
+            </li>
+            
+            <li class="f-header__item"><a href="#0" class="f-header__link">Об организации</a></li>
+            <li class="f-header__item"><a href="/gallery.html" class="f-header__link"  aria-current="page">Галерея</a></li>
+            <li class="f-header__item"><a href="/contacts.html" class="f-header__link">Контакты</a></li>
+          </ul>
         </div>
+      </div>
     </header>
 
     <!-- Main -->
     <main class="main">
 
-        <section class="gallery margin-top-xxl">
-            <div class="gallery__container container max-width-md">
-                <h2 class="gallery__title--strong gallery__title--center title">
-                    Фото
-                </h2>
-                <ul class="gallery__list grid grid-gap-sm margin-top-md">
-                    <li class="gallery__item col-12@xs col-3@sm col-2@md">
-                        <a href="#" class="gallery__link">
-                                <img src="/assets/img/dsasd.jpg" alt="#" class="gallery__image">
-                        </a>
-                    </li>
-                </ul>
+      <!-- Хлебные крошки -->
+      <nav class="breadcrumbs text-sm container max-width-adaptive-lg margin-y-sm" aria-label="Breadcrumbs">
+        <ol class="flex flex-wrap flex-gap-xxs">
+          <li class="breadcrumbs__item">
+            <a href="/" class="color-inherit">Главная</a>
+            <svg class="icon margin-left-xxxs color-contrast-medium" aria-hidden="true" viewBox="0 0 16 16"><g stroke-width="1" stroke="currentColor"><polyline fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="6.5,3.5 11,8 6.5,12.5 "></polyline></g></svg>
+          </li>
+      
+          <li class="breadcrumbs__item">
+            <a href="/gallery.html" class="color-inherit">Галерея</a>
+            <svg class="icon margin-left-xxxs color-contrast-medium" aria-hidden="true" viewBox="0 0 16 16"><g stroke-width="1" stroke="currentColor"><polyline fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="6.5,3.5 11,8 6.5,12.5 "></polyline></g></svg>
+          </li>
+
+          <li class="breadcrumbs__item" aria-current="page">Название альбома</li>
+        </ol>
+      </nav>
+
+      <!-- Галерея -->
+      <section class="container max-width-lg">
+        
+        <ul class="exp-gallery grid grid-gap-xs js-exp-gallery" data-controls="expLightbox">
+          <li class="col-6 col-3@sm js-exp-gallery__item">
+            <figure>
+              <img src="../../assets/img/1.jpg" data-src="../../assets/img/1.jpg" alt="Image Description">
+              <figcaption class="sr-only js-exp-gallery__caption">Описание картинки</figcaption>
+            </figure>
+          </li>
+        
+          <li class="col-6 col-3@sm js-exp-gallery__item">
+            <figure>
+              <img src="../../assets/img/2.jpg" data-src="../../assets/img/2.jpg" alt="Image Description">
+              <figcaption class="sr-only js-exp-gallery__caption">Описание картинки</figcaption>
+            </figure>
+          </li>
+        
+          <li class="col-6 col-3@sm js-exp-gallery__item">
+            <figure>
+              <img src="../../assets/img/3.jpg" data-src="../../assets/img/3.jpg" alt="Image Description">
+              <figcaption class="sr-only js-exp-gallery__caption">Описание картинки</figcaption>
+            </figure>
+          </li>
+
+          <li class="col-6 col-3@sm js-exp-gallery__item">
+            <figure>
+              <img src="../../assets/img/4.jpg" data-src="../../assets/img/4.jpg" alt="Image Description">
+              <figcaption class="sr-only js-exp-gallery__caption">Описание картинки</figcaption>
+            </figure>
+          </li>
+          <li class="col-6 col-3@sm js-exp-gallery__item">
+            <figure>
+              <img src="../../assets/img/5.jpg" data-src="../../assets/img/5.jpg" alt="Image Description">
+              <figcaption class="sr-only js-exp-gallery__caption">Описание картинки</figcaption>
+            </figure>
+          </li>
+          <li class="col-6 col-3@sm js-exp-gallery__item">
+            <figure>
+              <img src="../../assets/img/6.jpg" data-src="../../assets/img/6.jpg" alt="Image Description">
+              <figcaption class="sr-only js-exp-gallery__caption">Описание картинки</figcaption>
+            </figure>
+          </li>
+          <li class="col-6 col-3@sm js-exp-gallery__item">
+            <figure>
+              <img src="../../assets/img/7.jpg" data-src="../../assets/img/7.jpg" alt="Image Description">
+              <figcaption class="sr-only js-exp-gallery__caption">Описание картинки</figcaption>
+            </figure>
+          </li>
+        </ul>
+        
+        <div id="expLightbox" class="modal exp-lightbox js-modal js-exp-lightbox" data-animation="on" aria-hidden="true">
+          <div class="exp-lightbox__content">
+            <header class="exp-lightbox__header">
+              <h1 class="exp-lightbox__title">Название Альбома</h1>
+        
+              <menu class="menu-bar menu-bar--expanded@md js-menu-bar" data-menu-class="menu--overlay">            
+                <li class="menu-bar__item js-modal__close" role="menuitem">
+                  <svg class="icon menu-bar__icon" aria-hidden="true" viewBox="0 0 24 24"><g stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="10" stroke-width="2" stroke="currentColor" fill="none"><line x1="19" y1="5" x2="5" y2="19"></line><line x1="19" y1="19" x2="5" y2="5"></line></g></svg>
+                  <span class="menu-bar__label reset">Закрыть</span>
+                </li>
+              </menu>
+            </header>
+        
+            <div class="exp-lightbox__body slideshow slideshow--transition-slide js-exp-lightbox__body" data-swipe="on" data-navigation="off" data-zoom="on">
+              <ul class="slideshow__content js-exp-lightbox__slideshow">
+                <!-- gallery created in JS -->
+              </ul>
+        
+              <ul>
+                <li class="slideshow__control js-slideshow__control">
+                  <button class="reset slideshow__btn js-tab-focus">
+                    <svg class="icon" viewBox="0 0 32 32"><title>Show previous slide</title><path d="M20.768,31.395L10.186,16.581c-0.248-0.348-0.248-0.814,0-1.162L20.768,0.605l1.627,1.162L12.229,16 l10.166,14.232L20.768,31.395z"></path></svg>
+                  </button>
+                </li>
+            
+                <li class="slideshow__control js-slideshow__control">
+                  <button class="reset slideshow__btn js-tab-focus">
+                    <svg class="icon" viewBox="0 0 32 32"><title>Show next slide</title><path d="M11.232,31.395l-1.627-1.162L19.771,16L9.605,1.768l1.627-1.162l10.582,14.813 c0.248,0.348,0.248,0.814,0,1.162L11.232,31.395z"></path></svg>
+                  </button>
+                </li>
+              </ul>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer class="main-footer">
+    <footer class="footer-v3 padding-y-lg">
+      
+      <!--  кнопка наверх -->
+      <a class="back-to-top js-back-to-top" href="#" data-offset="100" data-duration="300">
+        <svg class="icon" viewBox="0 0 16 16"><title>Go to top of page</title><g stroke-width="1" stroke="currentColor"><polyline fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="15.5,11.5 8,4 0.5,11.5 "></polyline></g></svg>
+      </a>
 
-        <div class="main-footer__container container max-width-lg">
-
-            <!-- Блоки -->
-
-            <div class="main-footer__blocks flex justify-between flex-gap-md flex-column@xs flex-row@sm">
-
-                <!-- Информация -->
-
-                <div class="main-footer__information">
-
-                    <div class="main-footer__wrapper-pictures">
-
-                        <img
-                            class="image"
-                            src="/assets/img/logo.svg"
-                            alt="Outlet Auto Village"
-                        >
-                    </div>
-
-                    <div class="main-footer__wrapper-information">
-
-                        <a
-                            class="main-footer__phone link"
-                            href="tel:+78124459713"
-                        >
-                            +7 812 445-97-13
-                        </a>
-
-                        <a
-                            class="main-footer__email link"
-                            href="mailto:info@outletautovillage.ru"
-                        >
-                            info@outletautovillage.ru
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Услуги -->
-
-                <div class="services">
-
-                    <h3 class="services__title main-footer__title">
-                        Услуги
-                    </h3>
-
-                    <ul class="services__list">
-
-                        <li class="services__item">
-
-                            <a
-                                href="#"
-                                class="services__link main-footer__link"
-                            >
-                                Продажа автомобилей с&nbsp;пробегом
-                            </a>
-                        </li>
-
-                        <li class="services__item">
-
-                            <a
-                                href="#"
-                                class="services__link main-footer__link"
-                            >
-                                Выкуп автомобилей с&nbsp;пробегом
-                            </a>
-                        </li>
-
-                        <li class="services__item">
-
-                            <a
-                                href="#"
-                                class="services__link main-footer__link"
-                            >
-                                Выкуп коммерческих авто
-                            </a>
-                        </li>
-
-                        <li class="services__item">
-
-                            <a
-                                href="#"
-                                class="services__link main-footer__link"
-                            >
-                                Трейд-ин
-                            </a>
-                        </li>
-
-                        <li class="services__item">
-
-                            <a
-                                href="#"
-                                class="services__link main-footer__link"
-                            >
-                                Автострахование
-                            </a>
-                        </li>
-
-                        <li class="services__item">
-
-                            <a
-                                href="#"
-                                class="services__link main-footer__link"
-                            >
-                                Автокредитование
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Компания -->
-
-                <div class="company">
-
-                    <h3 class="company__title main-footer__title">
-                        Компания
-                    </h3>
-
-                    <ul class="company__list">
-
-                        <li class="company__item">
-
-                            <a
-                                href="#"
-                                class="company__link main-footer__link"
-                            >
-                                О нас
-                            </a>
-                        </li>
-
-                        <li class="company__item">
-
-                            <a
-                                href="#"
-                                class="company__link main-footer__link"
-                            >
-                                Почему выбирают нас
-                            </a>
-                        </li>
-
-                        <li class="company__item">
-
-                            <a
-                                href="#"
-                                class="company__link main-footer__link"
-                            >
-                                Акции
-                            </a>
-                        </li>
-
-                        <li class="company__item">
-
-                            <a
-                                href="#"
-                                class="company__link main-footer__link"
-                            >
-                                Документы
-                            </a>
-                        </li>
-
-                        <li class="company__item">
-
-                            <a
-                                href="#"
-                                class="company__link main-footer__link"
-                            >
-                                Отзывы
-                            </a>
-                        </li>
-
-                        <li class="company__item">
-
-                            <a
-                                href="#"
-                                class="company__link main-footer__link"
-                            >
-                                Контакты
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="main-footer__blocks flex flex-column">
-
-                <div class="main-footer__socials">
-
-                    <ul class="socials__list flex flex-gap-sm justify-center ">
-
-                        <li class="socials__item">
-
-                            <a
-                                href="instagram.ru"
-                                class="socials__link"
-                            >
-                                Инстаграм
-
-                                <img
-                                    class="socials__image"
-                                    src="/assets/img/instagram.svg"
-                                    alt="instagram"
-                                >
-                            </a>
-                        </li>
-
-                        <li class="socials__item">
-
-                            <a
-                                href="vkontakte.com"
-                                class="socials__link"
-                            >
-                                Вконтакте
-
-                                <img
-                                    class="socials__image"
-                                    src="/assets/img/vk.svg"
-                                    alt="vkontakte"
-                                >
-                            </a>
-                        </li>
-
-                        <li class="socials__item">
-
-                            <a
-                                href="facebook.com"
-                                class="socials__link"
-                            >
-                                Фейсбук
-
-                                <img
-                                    class="socials__image"
-                                    src="/assets/img/facebook.svg"
-                                    alt="facebook"
-                                >
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="main-footer__copyright copyright flex flex-wrap justify-center">
-
-                    <p class="copyright__text">
-                        © 2018 ООО «Аутлет Ауто Вилладж»
-                    </p>
-
-                    <a
-                        class="copyright__link main-footer__link"
-                        href="#"
-                    >
-                        Пользовательское соглашение
-                    </a>
-
-                    <a
-                        class="copyright__link main-footer__link"
-                        href="#"
-                    >
-                        &nbsp;Политика конфиденциальности
-                    </a>
-                </div>
-            </div>
+      <div class="footer-v3__container container max-width-lg">
+        <div class="footer-v3__logo">
+          <a href="#0">
+            <img src="../../assets/img/logo.png" alt="Логотип союза чернобыль">
+          </a>
         </div>
+    
+        <nav class="footer-v3__nav">
+          <ul class="footer-v3__nav-list">
+            <li class="footer-v3__nav-item"><a href="#0">Документы</a></li>
+            <li class="footer-v3__nav-item"><a href="#0">О нас</a></li>
+            <li class="footer-v3__nav-item"><a href="#0">Контакты</a></li>
+          </ul>
+        </nav>
+    
+        <div class="footer-v3__socials">
+          <a href="#0">
+            <svg id="Bold" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><title>Подпишитесь на нас в Одноклассниках</title><path d="m4.721 12.881c-.613 1.205.083 1.781 1.671 2.765 1.35.834 3.215 1.139 4.413 1.261-.491.472 1.759-1.692-4.721 4.541-1.374 1.317.838 3.43 2.211 2.141l3.717-3.585c1.423 1.369 2.787 2.681 3.717 3.59 1.374 1.294 3.585-.801 2.226-2.141-.102-.097-5.037-4.831-4.736-4.541 1.213-.122 3.05-.445 4.384-1.261l-.001-.001c1.588-.989 2.284-1.564 1.68-2.769-.365-.684-1.349-1.256-2.659-.267 0 0-1.769 1.355-4.622 1.355-2.854 0-4.622-1.355-4.622-1.355-1.309-.994-2.297-.417-2.658.267z"/><path d="m11.999 12.142c3.478 0 6.318-2.718 6.318-6.064 0-3.36-2.84-6.078-6.318-6.078-3.479 0-6.319 2.718-6.319 6.078 0 3.346 2.84 6.064 6.319 6.064zm0-9.063c1.709 0 3.103 1.341 3.103 2.999 0 1.644-1.394 2.985-3.103 2.985s-3.103-1.341-3.103-2.985c-.001-1.659 1.393-2.999 3.103-2.999z"/></svg>
+          </a>
+        </div>
+      </div>
     </footer>
+    <script src="assets/js/scripts.js"></script>
 </body>
+
 </html>

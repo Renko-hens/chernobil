@@ -1,10 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900&display=swap" rel="stylesheet">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900&display=swap"
+        rel="stylesheet"
+    >
     <script>
         document.getElementsByTagName("html")[0].className += " js";
     </script>
@@ -16,11 +23,11 @@
         }
     </script>
     <noscript>
-    <link
-      rel="stylesheet"
-      href="assets/css/style-fallback.css"
-    >
-  </noscript>
+        <link
+            rel="stylesheet"
+            href="assets/css/style-fallback.css"
+        >
+    </noscript>
     <title>Союз чернобыльцев Калмыкии</title>
 </head>
 
@@ -28,7 +35,7 @@
     <!-- Header -->
     <header class="f-header js-f-header">
       <div class="f-header__mobile-content container max-width-lg">
-        <a href="/" class="f-header__logo">
+        <a href="#0" class="f-header__logo">
           <img src="../../assets/img/logo.png" alt="Логотип союза чернобыль">
         </a>
     
@@ -47,7 +54,7 @@
       
           <ul class="f-header__list">
             <!-- Одноуровневые заголовки -->
-            <li class="f-header__item"><a href="/" class="f-header__link" >Главная</a></li>
+            <li class="f-header__item"><a href="/" class="f-header__link">Главная</a></li>
             <li class="f-header__item"><a href="/news.html" class="f-header__link">Новости</a></li>
             
             <!-- Элемент с двууровневыми заголовками меню -->
@@ -64,42 +71,112 @@
             </li>
             
             <li class="f-header__item"><a href="#0" class="f-header__link">Об организации</a></li>
-            <li class="f-header__item"><a href="/gallery.html" class="f-header__link">Галерея</a></li>
-            <li class="f-header__item"><a href="/contacts.html" class="f-header__link" aria-current="page">Контакты</a></li>
+            <li class="f-header__item"><a href="/gallery.html" class="f-header__link"  aria-current="page">Галерея</a></li>
+            <li class="f-header__item"><a href="/contacts.html" class="f-header__link">Контакты</a></li>
           </ul>
         </div>
       </div>
     </header>
 
+    <!-- Main -->
     <main class="main">
-      <section class="contacts">
-        <div class="container max-width-adaptive-sm">
-          <dl class="details-list-v2 ">
-            <div class="details-list-v2__item">
-              <dt class="details-list-v2__dt">Адрес</dt>
-              <dd class="details-list-v2__dd">
-               1-я Северо-западная улица <br>359 241 <br>Элиста, Республика Калмыкия
-              </dd>
-            </div>
-          
-            <div class="details-list-v2__item">
-              <dt class="details-list-v2__dt">Почта</dt>
-              <dd class="details-list-v2__dd">
-                <a href='mailto:webmaster@example.com'>hello@myemail.com</a>
-              </dd>
-            </div>
-          
-            <div class="details-list-v2__item">
-              <dt class="details-list-v2__dt">Номер для связи</dt>
-              <dd class="details-list-v2__dd">
-                <a href='tel:+44 7656 6455'>+7 994 231 4212</a> <br><small class='color-contrast-medium'>Понедельник - Пятница, 11:00 - 16:00</small>
-              </dd>
-            </div>
-          </dl>
-        </div>
-      </section>
-    </main>
 
+      <div class="container max-width-adaptive-xl">
+        <div class="grid grid-gap-sm">
+          <a href="/gallery_item.html" class="card-v9 col-8@md" aria-labelledby="cardTitle1" style="background-image: url('../../assets/img/1.jpg');">
+            <div class="card-v9__content">
+              <div class="card-v9__text">
+                <p class="card-v9__label">Благотворительность</p>
+                <h1 id="cardTitle1" class="card-v9__title">Альбом нашей организации</h1>
+              </div>
+        
+              <div class="margin-top-auto">
+                <span class="card-v9__btn"><i>Перейти к альбому</i></span>
+              </div>
+            </div>
+          </a>
+          
+          <a href="#0" class="card-v9 col-4@md" aria-labelledby="cardTitle2" style="background-image: url('../../../app/assets/img/gallery-img-2.jpg');">
+            <div class="card-v9__content">
+              <div class="card-v9__text">
+                <p class="card-v9__label">Experiences</p>
+                <h1 id="cardTitle2" class="card-v9__title">Lorem ipsum dolor sit amet consectetur.</h1>
+              </div>
+        
+              <div class="margin-top-auto">
+                <span class="card-v9__btn"><i>Read more</i></span>
+              </div>
+            </div>
+          </a>
+    
+          <a href="#0" class="card-v9 col-4@md" aria-labelledby="cardTitle3" style="background-image: url('../../../app/assets/img/gallery-img-3.jpg');">
+            <div class="card-v9__content">
+              <div class="card-v9__text">
+                <p class="card-v9__label">Experiences</p>
+                <h1 id="cardTitle3" class="card-v9__title">Lorem ipsum dolor sit amet.</h1>
+              </div>
+        
+              <div class="margin-top-auto">
+                <span class="card-v9__btn"><i>Read more</i></span>
+              </div>
+            </div>
+          </a>
+    
+          <a href="#0" class="card-v9 col-8@md" aria-labelledby="cardTitle4" style="background-image: url('../../../app/assets/img/gallery-img-4.jpg');">
+            <div class="card-v9__content">
+              <div class="card-v9__text">
+                <p class="card-v9__label">Travels</p>
+                <h1 id="cardTitle4" class="card-v9__title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h1>
+              </div>
+        
+              <div class="margin-top-auto">
+                <span class="card-v9__btn"><i>Read more</i></span>
+              </div>
+            </div>
+          </a>
+    
+          <a href="#0" class="card-v9 col-4@md" aria-labelledby="cardTitle5" style="background-image: url('../../../app/assets/img/gallery-img-5.jpg');">
+            <div class="card-v9__content">
+              <div class="card-v9__text">
+                <p class="card-v9__label">Tours</p>
+                <h1 id="cardTitle5" class="card-v9__title">Lorem ipsum dolor sit amet.</h1>
+              </div>
+        
+              <div class="margin-top-auto">
+                <span class="card-v9__btn"><i>Read more</i></span>
+              </div>
+            </div>
+          </a>
+    
+          <a href="#0" class="card-v9 col-4@md" aria-labelledby="cardTitle6" style="background-image: url('../../../app/assets/img/gallery-img-6.jpg');">
+            <div class="card-v9__content">
+              <div class="card-v9__text">
+                <p class="card-v9__label">Travels</p>
+                <h1 id="cardTitle6" class="card-v9__title">Lorem ipsum dolor sit amet consectetur.</h1>
+              </div>
+        
+              <div class="margin-top-auto">
+                <span class="card-v9__btn"><i>Read more</i></span>
+              </div>
+            </div>
+          </a>
+    
+          <a href="#0" class="card-v9 col-4@md" aria-labelledby="cardTitle7" style="background-image: url('../../../app/assets/img/gallery-img-7.jpg');">
+            <div class="card-v9__content">
+              <div class="card-v9__text">
+                <p class="card-v9__label">Friends</p>
+                <h1 id="cardTitle7" class="card-v9__title">Lorem ipsum dolor sit.</h1>
+              </div>
+        
+              <div class="margin-top-auto">
+                <span class="card-v9__btn"><i>Read more</i></span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    
+    </main>
 
     <footer class="footer-v3 padding-y-lg">
       
